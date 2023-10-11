@@ -248,7 +248,7 @@ class sdsio_server_serial:
                 else:
                     self.ser.port = f"COM{self.port}"
             else:
-                self.ser.port = f"dev/tty{self.port}"
+                self.ser.port = f"{self.port}"
             self.ser.baudrate = self.baudrate
             self.ser.parity   = self.parity
             self.ser.stopbits = self.stop_bits
